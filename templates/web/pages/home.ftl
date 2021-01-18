@@ -17,7 +17,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="/static-assets/css/ie8.css" /><![endif]-->
 		<link rel="stylesheet" href="/static-assets/css/jquery-ui.min.css" />
 	</head>
-	<body> <!-- a change -->
+	<body> <!-- a change 2 -->
 		<!-- Wrapper -->
 			<div id="wrapper">
 
