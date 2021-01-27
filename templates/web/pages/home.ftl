@@ -31,7 +31,9 @@
 							<!-- Banner -->
 								<section id="banner" <@studio.iceAttr iceGroup="hero"/>>
 									<div class="content">
+										<@pretty.terryMakePretty color="green">
 										<header id="hero">${contentModel.hero_title_html}</header>
+										</@pretty.terryMakePretty>
 										${contentModel.hero_text_html}
 									</div>
 									<span class="image object">
