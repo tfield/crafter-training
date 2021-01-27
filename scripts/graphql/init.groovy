@@ -19,6 +19,7 @@ def fooType = newObject()
         .name('title')
         .description("Title")
         .type(nonNull(GraphQLString))
+        .build()
         ]).build()
         
         
