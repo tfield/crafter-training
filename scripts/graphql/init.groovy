@@ -28,5 +28,5 @@ def fooType = newObject()
 schema.field(newFieldDefinition()
     .name('fooData')
     .description("All operations related to the fooData API")
-    type(list(fooType)))
+    .type(list(fooType)))
     
