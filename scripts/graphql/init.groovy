@@ -20,6 +20,13 @@ def fooType = newObject()
         .description("Title")
         .type(nonNull(GraphQLString))
         .build()
+        ],
+        [
+        newFieldDefinition()
+        .name('count')
+        .description("Count")
+        .type(nonNull(GraphQLString))
+        .build()
         ]).build()
         
         
