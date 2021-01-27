@@ -22,3 +22,11 @@ def fooType = newObject()
         .type(nonNull(GraphQLString))
         .build()
         ]).build()
+        
+        
+        
+schema.field(newFieldDefinition()
+    .name('fooData')
+    .description("All operations related to the fooData API")
+    type(list(fooType)))
+    
