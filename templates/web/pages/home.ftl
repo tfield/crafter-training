@@ -1,5 +1,5 @@
 <#import "/templates/system/common/cstudio-support.ftl" as studio />
-<#import "/templates/web/macros/terryMakePretty.ftl" />
+<#import "/templates/web/macros/terryMakePretty.ftl" as pretty />
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
@@ -42,9 +42,9 @@
 							<!-- Section -->
 								<section <@studio.iceAttr iceGroup="features"/>>
 									<header class="major">
-										<@terryMakePretty "orange">
+										<@pretty "orange">
 										<h3>${contentModel.features_title_t}</h3>
-										</@terryMakePretty>
+										</@pretty>
 									</header>
 									<div class="features" <@studio.componentContainerAttr target="features_o" component=contentModel/>>
 										<#if contentModel.features_o?? && contentModel.features_o.item??>
