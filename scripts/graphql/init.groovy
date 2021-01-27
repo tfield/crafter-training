@@ -6,7 +6,6 @@ import static graphql.schema.GraphQLObjectType.newObject
 import static graphql.schema.GraphQLNonNull.nonNull
 import static graphql.schema.GraphQLList.list
 
-asdfas fasd
 def OUR_FOO_DATA = [
     [title: "ABC", count: 46],
     [title: "XYZ", count: 2]
