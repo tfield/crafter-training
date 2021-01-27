@@ -42,9 +42,9 @@
 							<!-- Section -->
 								<section <@studio.iceAttr iceGroup="features"/>>
 									<header class="major">
-										<@pretty "orange">
+										<@pretty.terryMakePretty color="orange">
 										<h3>${contentModel.features_title_t}</h3>
-										</@pretty>
+										</@pretty.terryMakePretty>
 									</header>
 									<div class="features" <@studio.componentContainerAttr target="features_o" component=contentModel/>>
 										<#if contentModel.features_o?? && contentModel.features_o.item??>
