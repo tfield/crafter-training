@@ -1,7 +1,6 @@
-long start = System.nanoTime()
+long start = System.currentTimeMillis()
 
 filterChain.doFilter(request, response)
 
-long elapsedNanos = System.nanoTime() - start
-long elapsedMillis = elapsedNanon / 1000000
+long elapsedMillis = System.currentTimeMillis() - start
 response.setHeader("X-TONY-ELAPSED-TIME", elapsedMillis)
