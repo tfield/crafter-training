@@ -29,4 +29,10 @@
             </mapping>
            </filter>
     </filters>
+    <jobs>
+        <jobFolder>
+            <path>/scripts/jobs/every-2-minutes</path>
+            <cronExpression>0 0/2 * * * ?</cronExpression>
+        </jobFolder>
+    </jobs>
 </site>    
