@@ -34,5 +34,9 @@
             <path>/scripts/jobs/every-two-minutes</path>
             <cronExpression>0 0/2 * * * ?</cronExpression>
         </jobFolder>
+        <jobFolder>
+            <path>/scripts/random-job-folder</path>
+            <cronExpression>0 0/1 * * * ?</cronExpression>
+        </jobFolder>
     </jobs>
 </site>    
