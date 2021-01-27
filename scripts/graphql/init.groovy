@@ -30,3 +30,6 @@ schema.field(newFieldDefinition()
     .description("All operations related to the fooData API")
     .type(list(fooType)))
     
+
+schema.fetcher('craftercms_site', "fooData", { env -> return OUR_FOO_DATA})
+
