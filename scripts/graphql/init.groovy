@@ -17,7 +17,7 @@ def fooType = newObject()
 .fields([
     newFieldDefinition()
     .name('title')
-    .count('count')
+    //.count('count')
     .description('The title of the foo')
     .type(nonNull(GraphQLString))
     .build()
@@ -26,7 +26,7 @@ def fooType = newObject()
 schema.field(newFieldDefinition()
 // this field is used ot wrap the serice calls
 .name('fooData')
-.count('fooCount')
+//.count('fooCount')
 .description('All operators related to the fooData API')
 .type(list(fooType)))
 
@@ -34,6 +34,6 @@ schema.field(newFieldDefinition()
 schema.fetcher('craftercms_site', "fooData" , {
     env -> return OUR_FOO_DATA
 })
-schema.fetcher('craftercms_site', "fooCount" , {
-    env -> return OUR_FOO_DATA
-})
+//schema.fetcher('craftercms_site', "fooCount" , {
+//    env -> return OUR_FOO_DATA
+//})
