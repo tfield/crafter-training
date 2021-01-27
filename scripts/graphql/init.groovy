@@ -23,7 +23,7 @@ def fooType = newObject()
     newFieldDefinition()
     .name('count')
     .description('Foo Count')
-    .type(nonNull(int))
+    .type(nonNull(GraphQLInt))
     .build()
     ]).build()
 
