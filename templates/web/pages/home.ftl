@@ -1,4 +1,5 @@
 <#import "/templates/system/common/cstudio-support.ftl" as studio />
+<#import "/templates/web/macros/tonyMakePretty.ftl" as tonyMacros />
 
 <!DOCTYPE HTML>
 <!--
@@ -31,8 +32,10 @@
 							<!-- Banner -->
 								<section id="banner" <@studio.iceAttr iceGroup="hero"/>>
 									<div class="content">
+									<@tonyMacros.tonyMakePretty cyan>
 										<header id="hero">${contentModel.hero_title_html}</header>
 										${contentModel.hero_text_html}
+									</tonyMacros>
 									</div>
 									<span class="image object">
 										<img src="${contentModel.hero_image_s !""}" alt="" />
