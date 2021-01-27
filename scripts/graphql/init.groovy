@@ -28,9 +28,6 @@ def fooType = newObject()
     ]).build()
 
 
-
-
-
 schema.field(newFieldDefinition()
 // this field is used ot wrap the serice calls
 .name('fooData')
@@ -39,8 +36,5 @@ schema.field(newFieldDefinition()
 
 // add the fetcher for the title field
 schema.fetcher('craftercms_site', "fooData" , {
-    env -> return OUR_FOO_DATA
-})
-schema.fetcher('craftercms_site', "fooCount" , {
     env -> return OUR_FOO_DATA
 })
