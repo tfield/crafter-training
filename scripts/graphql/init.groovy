@@ -17,11 +17,19 @@ def fooType = newObject()
 .fields([
     newFieldDefinition()
     .name('title')
-    //.count('count')
     .description('The title of the foo')
     .type(nonNull(GraphQLString))
+    .build(),
+    newFieldDefinition()
+    .name('count')
+    .description('Foo Count')
+    .type(nonNull(Integer))
     .build()
     ]).build()
+
+
+
+
 
 schema.field(newFieldDefinition()
 // this field is used ot wrap the serice calls
