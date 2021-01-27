@@ -17,6 +17,7 @@ def fooType = newObject()
 .fields([
     newFieldDefinition()
     .name('title')
+    .count('count')
     .description('The title of the foo')
     .type(nonNull(GraphQLString))
     .build()
