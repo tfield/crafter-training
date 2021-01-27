@@ -23,7 +23,7 @@ def fooType = newObject()
     newFieldDefinition()
     .name('count')
     .description('Foo Count')
-    .type(nonNull(Integer))
+    .type(nonNull(int))
     .build()
     ]).build()
 
