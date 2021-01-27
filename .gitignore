@@ -96,3 +96,7 @@ public
 
 # DynamoDB Local files
 .dynamodb/
+/config/studio/content-types/component/component.iml
+/config/studio/content-types/content-types.iml
+/config/studio/content-types/page/page.iml
+/scripts/scripts.iml
