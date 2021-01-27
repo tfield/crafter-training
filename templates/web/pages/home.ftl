@@ -1,5 +1,5 @@
 <#import "/templates/system/common/cstudio-support.ftl" as studio />
-
+<#import "/templates/web/macros/terryMakePretty.ftl" as terryMakePretty />
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
