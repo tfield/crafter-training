@@ -6,7 +6,7 @@
         <#else>
             <#assign name = "stranger" />
         </#if>
-        Howdy, ${name}
+        Why hello there, ${name}
     </a>
 
     <ul class="icons">
