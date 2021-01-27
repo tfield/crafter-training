@@ -35,7 +35,7 @@
 									<@tonyMacros.tonyMakePretty cyan>
 										<header id="hero">${contentModel.hero_title_html}</header>
 										${contentModel.hero_text_html}
-									</tonyMacros>
+									</@tonyMacros>
 									</div>
 									<span class="image object">
 										<img src="${contentModel.hero_image_s !""}" alt="" />
