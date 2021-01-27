@@ -1,4 +1,5 @@
 package graphql
+import static graphql.Scalars.GraphQLInt
 import static graphql.Scalars.GraphQLString
 import static graphql.schema.GraphQLFieldDefinition.newFieldDefinition
 import static graphql.schema.GraphQLObjectType.newObject
@@ -22,7 +23,7 @@ def fooType = newObject()
     .build(),
     newFieldDefinition()
     .name('count')
-    .description('Foo Count')
+    .description("Foo Count")
     .type(nonNull(GraphQLInt))
     .build()
     ]).build()
