@@ -27,6 +27,6 @@
             <mapping>
                 <include>/**</include>
             </mapping>
-        </filter>
+           </filter>
     </filters>
 </site>    
