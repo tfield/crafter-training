@@ -27,3 +27,9 @@ schema.field(newFieldDefinition()
 .name('fooData')
 .description('All operators related to the fooData API')
 .type(list(fooType)))
+
+// add the fetcher for the title field
+schema.fetcher('craftercms_site', "fooData" , {
+    env -> return OUR_FOO_DATA
+    
+})
