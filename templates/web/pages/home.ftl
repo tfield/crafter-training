@@ -32,7 +32,7 @@
 							<!-- Banner -->
 								<section id="banner" <@studio.iceAttr iceGroup="hero"/>>
 									<div class="content">
-									<@tonyMacros.tonyMakePretty cyan>
+									<@tonyMacros.tonyMakePretty color=cyan>
 										<header id="hero">${contentModel.hero_title_html}</header>
 										${contentModel.hero_text_html}
 									</@tonyMacros.tonyMakePretty>
