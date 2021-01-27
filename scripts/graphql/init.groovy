@@ -15,16 +15,19 @@ def fooType = newObject()
     .name('FooType')
     .description('Foo Type')
     .fields([
+        
         newFieldDefinition()
-        .name('title')
-        .description("Title")
-        .type(nonNull(GraphQLString))
+            .name('title')
+            .description("Title")
+            .type(nonNull(GraphQLString))
         .build(),
+        
         newFieldDefinition()
-        .name('count')
-        .description("Count")
-        .type(nonNull(GraphQLString))
+            .name('count')
+            .description("Count")
+            .type(nonNull(GraphQLString))
         .build()
+        
         ]).build()
         
         
