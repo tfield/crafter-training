@@ -22,4 +22,8 @@ def fooType = newObject()
     .build()
     ]).build()
 
-
+schema.field(newFieldDefinition()
+// this field is used ot wrap the serice calls
+.name('fooData')
+.description('All operators related to the fooData API')
+.type(list(fooType)))
