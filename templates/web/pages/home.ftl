@@ -1,5 +1,6 @@
 <#import "/templates/system/common/cstudio-support.ftl" as studio />
-<#import "/templates/web/macros/terryMakePretty.ftl" as pretty />
+<#import "/templates/web/macros/tonyMakePretty.ftl" as tonyMacros />
+
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
@@ -31,10 +32,11 @@
 							<!-- Banner -->
 								<section id="banner" <@studio.iceAttr iceGroup="hero"/>>
 									<div class="content">
-										<@pretty.terryMakePretty color="green">
+									<@tonyMacros.tonyMakePretty color="cyan">
 										<header id="hero">${contentModel.hero_title_html}</header>
 										</@pretty.terryMakePretty>
 										${contentModel.hero_text_html}
+									</@tonyMacros.tonyMakePretty>
 									</div>
 									<span class="image object">
 										<img src="${contentModel.hero_image_s !""}" alt="" />

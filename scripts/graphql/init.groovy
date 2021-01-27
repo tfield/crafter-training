@@ -1,4 +1,5 @@
 package graphql
+
 import static graphql.Scalars.GraphQLInt
 import static graphql.Scalars.GraphQLString
 import static graphql.schema.GraphQLFieldDefinition.newFieldDefinition
@@ -7,34 +8,36 @@ import static graphql.schema.GraphQLNonNull.nonNull
 import static graphql.schema.GraphQLList.list
 
 def OUR_FOO_DATA = [
-[title: "ABC", count: 46],
-[title: "XYZ", count: 14]
+    [title: "ABC", count: 46],
+    [title: "XYZ", count: 2]
 ]
 
-// define the custom Type
 def fooType = newObject()
-.name('FooType')
-.description('Foo Type')
-.fields([
-    newFieldDefinition()
-    .name('title')
-    .description('The title of the foo')
-    .type(nonNull(GraphQLString))
-    .build(),
-    newFieldDefinition()
-    .name('count')
-    .description("Foo Count")
-    .type(nonNull(GraphQLInt))
-    .build()
-    ]).build()
-
-
+    .name('FooType')
+    .description('Foo Type')
+    .fields([
+        
+        newFieldDefinition()
+            .name('title')
+            .description("Title")
+            .type(nonNull(GraphQLString))
+        .build(),
+        
+        newFieldDefinition()
+            .name('count')
+            .description("Count")
+            .type(nonNull(GraphQLInt))
+        .build()
+        
+        ]).build()
+        
+        
+        
 schema.field(newFieldDefinition()
-.name('fooData')
-.description('All operators related to the fooData API')
-.type(list(fooType)))
+    .name('fooData')
+    .description("All operations related to the fooData API")
+    .type(list(fooType)))
+    
 
-// add the fetcher for the title field
-schema.fetcher('craftercms_site', "fooData" , {
-    env -> return OUR_FOO_DATA
-})
+schema.fetcher('craftercms_site', "fooData", { env -> return OUR_FOO_DATA})
+

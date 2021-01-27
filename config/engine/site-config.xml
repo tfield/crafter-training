@@ -23,16 +23,20 @@
     <version>2</version>
     <filters>
         <filter>
-            <script>/scripts/filters/myTimer.groovy</script>
+            <script>/scripts/filters/timer.groovy</script>
             <mapping>
                 <include>/**</include>
             </mapping>
-           </filter>
+        </filter>
     </filters>
     <jobs>
         <jobFolder>
-            <path>/scripts/jobs/every-2-minutes</path>
+            <path>/scripts/jobs/every-two-minutes</path>
             <cronExpression>0 0/2 * * * ?</cronExpression>
+        </jobFolder>
+        <jobFolder>
+            <path>/scripts/random-job-folder</path>
+            <cronExpression>0 0/1 * * * ?</cronExpression>
         </jobFolder>
     </jobs>
 </site>    
