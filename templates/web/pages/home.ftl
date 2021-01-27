@@ -34,9 +34,9 @@
 									<div class="content">
 									<@tonyMacros.tonyMakePretty color="cyan">
 										<header id="hero">${contentModel.hero_title_html}</header>
-										</@pretty.terryMakePretty>
+										</@tonyMacros.tonyMakePretty>
 										${contentModel.hero_text_html}
-									</@tonyMacros.tonyMakePretty>
+									
 									</div>
 									<span class="image object">
 										<img src="${contentModel.hero_image_s !""}" alt="" />
